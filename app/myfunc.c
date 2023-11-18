@@ -20,8 +20,8 @@ double* my_sqrt(int a, int b, int c) {
 		roots[0] = root1;
 		roots[1] = root1;
 	} else {
-		roots[0] = NaN;
-		roots[1] = NaN;
+		roots[0] = NAN;
+		roots[1] = NAN;
 	}
 
 	return roots;

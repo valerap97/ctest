@@ -10,7 +10,7 @@ set(CMAKE_C_FLAGS "-Wall -Wextra -Wpedantic -Wconversion -Wunreachable-code -Wol
 include(GoogleTest)
 
 set (TESTS
-        fibonachi_test.h
+        my_sqrt_test.h
         )
 
 include_directories(${PROJECT_NAME} PUBLIC ../app)
