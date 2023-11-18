@@ -38,7 +38,7 @@ TEST(QuadraticEquationTest, TwoRoots) {
 }
 
 TEST(QuadraticEquationTest, InsufficientArguments) {
-    double *roots = my_sqrt(1, 2); // Insufficient arguments
+    double *roots = my_sqrt(1, 2, 0); // Insufficient arguments
     ASSERT_TRUE(isnan(roots[0]));
     ASSERT_TRUE(isnan(roots[1]));
     free(roots);
