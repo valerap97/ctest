@@ -78,4 +78,19 @@ TEST(QuadraticEquationTest, my_sqrt_TwoRoots) {
     free(roots);
 }
 
+TEST(QuadraticEquationIntegrationTest, MockMain) {
+    char *argv[] = {(char *)"main", (char *)"1", (char *)"-3", (char *)"2"};
+
+    int a = atoi(argv[1]);
+    int b = atoi(argv[2]);
+    int c = atoi(argv[3]);
+
+    double *roots = my_sqrt(a, b, c);
+
+    ASSERT_EQ(roots[0], 2.00);
+    ASSERT_EQ(roots[1], 1.00);
+    
+    free(roots);
+}
+
 #endif // QUADRATIC_EQUATION_H
