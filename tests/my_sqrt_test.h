@@ -24,7 +24,7 @@ TEST(QuadraticEquationTest, OneRoot) {
 }
 
 TEST(QuadraticEquationTest, ComplexRoots) {
-    double *roots = my_sqrt(2, 4, 2);
+    double *roots = my_sqrt(5, 2, 3);
     ASSERT_TRUE(isnan(roots[0]));
     ASSERT_TRUE(isnan(roots[1]));
     free(roots);
