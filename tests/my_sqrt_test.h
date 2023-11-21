@@ -25,8 +25,8 @@ TEST(QuadraticEquationTest, OneRoot) {
 
 TEST(QuadraticEquationTest, ComplexRoots) {
     double *roots = my_sqrt(5, 2, 3);
-    ASSERT_TRUE(isnan(roots[0]));
-    ASSERT_TRUE(isnan(roots[1]));
+    ASSERT_TRUE(roots[0] != roots[0]);
+    ASSERT_TRUE(roots[1] != roots[1]);
     free(roots);
 }
 
@@ -37,6 +37,7 @@ TEST(QuadraticEquationTest, TwoRoots) {
     free(roots);
 }
 
+<<<<<<< HEAD
 TEST(QuadraticEquationTest, InsufficientArguments) {
     double *roots = my_sqrt(1, 2); // Insufficient arguments
     ASSERT_TRUE(isnan(roots[0]));
@@ -44,6 +45,8 @@ TEST(QuadraticEquationTest, InsufficientArguments) {
     free(roots);
 }
 
+=======
+>>>>>>> f8c736f (Correct tests)
 // Блочное тестирование (функция my_sqrt)
 
 TEST(QuadraticEquationTest, my_sqrt_PositiveRoots) {
@@ -67,9 +70,9 @@ TEST(QuadraticEquationTest, my_sqrt_OneRoot) {
 }
 
 TEST(QuadraticEquationTest, my_sqrt_ComplexRoots) {
-    int a = 2;
-    int b = 4;
-    int c = 2;
+    int a = 5;
+    int b = 2;
+    int c = 3;
     double *roots = my_sqrt(a, b, c);
     ASSERT_TRUE(isnan(roots[0]));
     ASSERT_TRUE(isnan(roots[1]));
