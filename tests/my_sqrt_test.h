@@ -36,17 +36,6 @@ TEST(QuadraticEquationTest, TwoRoots) {
     ASSERT_EQ(roots[1], -1.0);
     free(roots);
 }
-
-<<<<<<< HEAD
-TEST(QuadraticEquationTest, InsufficientArguments) {
-    double *roots = my_sqrt(1, 2); // Insufficient arguments
-    ASSERT_TRUE(isnan(roots[0]));
-    ASSERT_TRUE(isnan(roots[1]));
-    free(roots);
-}
-
-=======
->>>>>>> f8c736f (Correct tests)
 // Блочное тестирование (функция my_sqrt)
 
 TEST(QuadraticEquationTest, my_sqrt_PositiveRoots) {
