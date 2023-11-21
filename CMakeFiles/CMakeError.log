@@ -1,6 +1,7 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp
 
+<<<<<<< HEAD
 Run Build Command(s):/usr/bin/gmake cmTC_b5461/fast && /usr/bin/gmake -f CMakeFiles/cmTC_b5461.dir/build.make CMakeFiles/cmTC_b5461.dir/build
 gmake[1]: вход в каталог «/home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp»
 Building C object CMakeFiles/cmTC_b5461.dir/src.c.o
@@ -9,14 +10,32 @@ Linking C executable cmTC_b5461
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5461.dir/link.txt --verbose=1
 /usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_b5461.dir/src.c.o  -o cmTC_b5461 
 /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: CMakeFiles/cmTC_b5461.dir/src.c.o: в функции «main»:
+=======
+Run Build Command(s):/usr/bin/gmake cmTC_109da/fast && gmake[1]: вход в каталог «/home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp»
+/usr/bin/gmake -f CMakeFiles/cmTC_109da.dir/build.make CMakeFiles/cmTC_109da.dir/build
+gmake[2]: вход в каталог «/home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_109da.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_109da.dir/src.c.o   -c /home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_109da
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_109da.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_109da.dir/src.c.o  -o cmTC_109da 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: CMakeFiles/cmTC_109da.dir/src.c.o: в функции «main»:
+>>>>>>> 0adbdea (Revert)
 src.c:(.text+0x2d): неопределённая ссылка на «pthread_create»
 /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: src.c:(.text+0x39): неопределённая ссылка на «pthread_detach»
 /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: src.c:(.text+0x45): неопределённая ссылка на «pthread_cancel»
 /usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: src.c:(.text+0x56): неопределённая ссылка на «pthread_join»
 collect2: ошибка: выполнение ld завершилось с кодом возврата 1
+<<<<<<< HEAD
 gmake[1]: *** [CMakeFiles/cmTC_b5461.dir/build.make:104: cmTC_b5461] Ошибка 1
 gmake[1]: выход из каталога «/home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp»
 gmake: *** [Makefile:138: cmTC_b5461/fast] Ошибка 2
+=======
+gmake[2]: *** [CMakeFiles/cmTC_109da.dir/build.make:104: cmTC_109da] Ошибка 1
+gmake[2]: выход из каталога «/home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp»
+gmake[1]: *** [Makefile:138: cmTC_109da/fast] Ошибка 2
+gmake[1]: выход из каталога «/home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp»
+>>>>>>> 0adbdea (Revert)
 
 
 Source file was:
@@ -43,6 +62,7 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp
 
+<<<<<<< HEAD
 Run Build Command(s):/usr/bin/gmake cmTC_8dad5/fast && /usr/bin/gmake -f CMakeFiles/cmTC_8dad5.dir/build.make CMakeFiles/cmTC_8dad5.dir/build
 gmake[1]: вход в каталог «/home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp»
 Building C object CMakeFiles/cmTC_8dad5.dir/CheckFunctionExists.c.o
@@ -55,6 +75,22 @@ collect2: ошибка: выполнение ld завершилось с код
 gmake[1]: *** [CMakeFiles/cmTC_8dad5.dir/build.make:104: cmTC_8dad5] Ошибка 1
 gmake[1]: выход из каталога «/home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp»
 gmake: *** [Makefile:138: cmTC_8dad5/fast] Ошибка 2
+=======
+Run Build Command(s):/usr/bin/gmake cmTC_28072/fast && gmake[1]: вход в каталог «/home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp»
+/usr/bin/gmake -f CMakeFiles/cmTC_28072.dir/build.make CMakeFiles/cmTC_28072.dir/build
+gmake[2]: вход в каталог «/home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp»
+Building C object CMakeFiles/cmTC_28072.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_28072.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_28072
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28072.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_28072.dir/CheckFunctionExists.c.o  -o cmTC_28072  -lpthreads 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: невозможно найти -lpthreads: Нет такого файла или каталога
+collect2: ошибка: выполнение ld завершилось с кодом возврата 1
+gmake[2]: *** [CMakeFiles/cmTC_28072.dir/build.make:104: cmTC_28072] Ошибка 1
+gmake[2]: выход из каталога «/home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp»
+gmake[1]: *** [Makefile:138: cmTC_28072/fast] Ошибка 2
+gmake[1]: выход из каталога «/home/02/polikarp/test-lab/ctest/CMakeFiles/CMakeTmp»
+>>>>>>> 0adbdea (Revert)
 
 
 
