@@ -93,4 +93,4 @@ TEST(QuadraticEquationIntegrationTest, MockMain) {
     free(roots);
 }
 
-#endif // QUADRATIC_EQUATION_H
+#endif // QUADRATIC_EQUATION_H 
