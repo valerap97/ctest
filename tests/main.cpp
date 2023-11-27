@@ -1,4 +1,4 @@
-#include "tests/my_sqrt_test.h"
+#include "my_sqrt_test.h"
 #include <gtest/gtest.h>
 
 int main(int argc, char *argv[])
