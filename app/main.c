@@ -12,7 +12,8 @@ int main(int argc, char *argv[]) {
     	int b = atoi(argv[2]);
     	int c = atoi(argv[3]);
 
-    	double *roots = my_sqrt(a, b, c);
+    		double *roots = malloc(2 * sizeof(double));
+			my_sqrt(a, b, c, roots);
 
 	printf("%.2lf ", roots[0]);
 	printf("%.2lf ", roots[1]);

@@ -4,9 +4,8 @@
 #include "myfunc.h"
 #include <math.h>
 
-double* my_sqrt(int a, int b, int c) {
+double* my_sqrt(int a, int b, int c, double *roots) {
 	double discriminant, root1, root2;
-	double *roots = malloc(2 * sizeof(double));
 
 	discriminant = b * b - 4 * a * c;
 
