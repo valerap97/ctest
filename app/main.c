@@ -2,35 +2,18 @@
 
 #include "myfunc.h"
 
-int main() {
-    printf("Enter a non-negative number: ");
-    double n = 0;
-    if (scanf("%lf", &n) != 1 || n < 0) {
-        printf("Invalid input. Please enter a non-negative number.\n");
-        return 0;      }        
+int main(int argc, char *argv[]) {
+    	if (argc - 1 != 3) {
+        	printf("Аргументов функции должно быть три!\n");
+        	return 1;
+    	}
 
-    // ��������, ��� �������� ������ ���� �����
-    int d;
-    while ((d = getchar()) != '\n' && d != EOF) {
-        if (d != ' ') {
-            printf("Invalid input. Please enter only one positive integer.\n");
-            return 0;
-        }
-    }
- 
-    double roots[2];
+    	int a = atoi(argv[1]);
+    	int b = atoi(argv[2]);
+    	int c = atoi(argv[3]);
 
-    printf("Enter a, b, c\n");
+	 double roots[2];
 
-    double a;
-    double b;
-    double c; 
-	
-    if (scanf("%lf %lf %lf", &a, &b, &c) != 3) {
-        printf("Invalid input. Please enter three valid numbers for coefficients a, b, and c.\n");
-        return 0;
-    }
- 
     int res = my_sqrt(a, b, c, roots);
 	
     if (res == NULL) {
