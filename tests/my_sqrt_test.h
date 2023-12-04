@@ -1,5 +1,5 @@
-#ifndef my_sqrt_H
-#define my_sqrt_H
+#ifndef MYSQRT_H
+#define MYSQRT_H
 
 #include <gtest/gtest.h>
 #include <array>
@@ -63,4 +63,4 @@ TEST(mySqrtTest, NoRealRoots) {
     ASSERT_DOUBLE_EQ(roots[1], 0.0);
 }
 
-#endif
+#endif //MYSQRT_H
