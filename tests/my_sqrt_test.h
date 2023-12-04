@@ -33,8 +33,8 @@ TEST(mySqrtTest, OneRealRoot) {
     my_sqrt(a, b, c, roots.data()); 
 
     ASSERT_FALSE(roots.empty());
-    ASSERT_DOUBLE_EQ(roots[0], 2.0);
-    ASSERT_DOUBLE_EQ(roots[1], 2.0);
+    ASSERT_DOUBLE_EQ(roots[0], -1.0);
+    ASSERT_DOUBLE_EQ(roots[1], -1.0);
 }
 
 TEST(mySqrtTest, ComplexRoots) {
