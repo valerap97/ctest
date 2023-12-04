@@ -25,8 +25,8 @@ TEST(mySqrtTest, TwoRealRoots) {
 
 TEST(mySqrtTest, OneRealRoot) {
     double a = 1.0;
-    double b = -4.0;
-    double c = 4.0;
+    double b = 2.0;
+    double c = 1.0;
 
     std::array<double, 2> roots;
 
