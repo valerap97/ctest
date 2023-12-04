@@ -1,3 +1,8 @@
+[![CI/CD GitHub Actions](https://github.com/valerap97/ctest/actions/workflows/test-action.yml/badge.svg)](https://github.com/valerap97/ctest/actions/workflows/test-action.yml)
+[![Coverage Status](https://coveralls.io/repos/github/valerap97/ctest/badge.svg?branch=main)](https://coveralls.io/github/valerap97/ctest?branch=main)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=DenisTerehin_ctest&metric=alert_status)](https://sonarcloud.io/dashboard?id=valerap97_ctest)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=valerap97_ctest&metric=bugs)](https://sonarcloud.io/summary/new_code?id=valerap97_ctest)
+[![Code smells](https://sonarcloud.io/api/project_badges/measure?project=valerap97_ctest&metric=code_smells)](https://sonarcloud.io/dashboard?id=valerap97_ctest)
 ## План тестирования:
 
 ### Аттестационное тестирование:
