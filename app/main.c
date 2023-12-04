@@ -17,8 +17,6 @@ int main() {
             return 0;
         }
     }
-
-    printf("Fibonachi %d\n", fibonachi((int)n));
  
     double roots[2];
 
@@ -33,7 +31,7 @@ int main() {
         return 0;
     }
  
-    int res = solveQuadraticEquation(a, b, c, roots);
+    int res = my_sqrt(a, b, c, roots);
 	
     if (res == NULL) {
         printf("No real roots\n");
