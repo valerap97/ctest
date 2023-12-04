@@ -14,8 +14,8 @@ extern "C" {
 
 TEST(integrationTest, sqrtFibonachi) {
 
-    double roots[2];
-    my_sqrt(fibonachi(6), -22, 14, roots);
+    std::array<double, 2> roots;
+    my_sqrt(fibonachi(6), -22, 14, roots.data());
 
     double expectedRoot1 = 1.75;
     double expectedRoot2 = 1.00; 
