@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(gtest gtest>=1.10)
-
+set_source_files_properties(main.c PROPERTIES LANGUAGE C)
 add_subdirectory(app)
 
 if(NOT gtest_FOUND)

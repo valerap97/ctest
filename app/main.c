@@ -2,24 +2,29 @@
 #include <stdlib.h>
 #include "myfunc.h"
 
-int main(int argc, char *argv[]) {
-	
-    	if (argc - 1 != 3) {
-        	printf("Аргументов функции должно быть три!\n");
-        	return 1;
-    	}
+int main(int argc, char *argv[])
+{
 
-    	int a = atoi(argv[1]);
-    	int b = atoi(argv[2]);
-    	int c = atoi(argv[3]);
+    if (argc - 1 != 3)
+    {
+        printf("Аргументов функции должно быть три!\n");
+        return 1;
+    }
 
-	 double roots[2];
+    int a = atoi(argv[1]);
+    int b = atoi(argv[2]);
+    int c = atoi(argv[3]);
+
+    double roots[2];
 
     int res = my_sqrt(a, b, c, roots);
-	
-    if (res == NULL) {
+
+    if (res == 0)
+    {
         printf("No real roots\n");
-    } else {
+    }
+    else
+    {
         printf("ROOT1 %f\n", roots[0]);
         printf("ROOT2 %f\n", roots[1]);
     }
