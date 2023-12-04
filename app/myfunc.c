@@ -4,25 +4,41 @@
 #include "myfunc.h"
 #include <math.h>
 
-double* my_sqrt(int a, int b, int c) {
-	double discriminant, root1, root2;
-	double *roots = malloc(2 * sizeof(double));
+int fibonachi(int num) {
+    int prev = 1;
+    int next = 1;
 
-	discriminant = b * b - 4 * a * c;
+    if (num < 0)
+        return 0;
 
-	if (discriminant > 0) {
-		root1 = (-b + sqrt(discriminant)) / (2 * a);
-		root2 = (-b - sqrt(discriminant)) / (2 * a);
-		roots[0] = root1;
-		roots[1] = root2;
-	} else if (discriminant == 0) {
-		root1 = -b / (2 * a);
-		roots[0] = root1;
-		roots[1] = root1;
-	} else {
-		roots[0] = NAN;
-		roots[1] = NAN;
-	}
+    if (num <= 2)
+        return num;
 
-	return roots;
+    int i = 2;
+    while (i < num) {
+        next += prev;
+        prev = next - prev;
+        i++;
+    }
+
+    return next;
+}
+
+int solveQuadraticEquation(double a, double b, double c, double* roots) {
+    double discriminant = b * b - 4 * a * c;
+
+    if (discriminant < 0) {
+	roots[0] = roots[1] = 0.0;
+	return 0;
+    } else {
+        if (discriminant == 0) {
+            roots[0] = -b / (2 * a);
+            roots[1] = roots[0];  
+        } else {
+            roots[0] = (-b + sqrt(discriminant)) / (2 * a);
+            roots[1] = (-b - sqrt(discriminant)) / (2 * a);
+        }
+
+        return 1;
+    }
 }
