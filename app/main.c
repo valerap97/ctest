@@ -21,12 +21,16 @@ int main(int argc, char *argv[])
 
     if (res == 0)
     {
-        printf("No real roots\n");
+        printf("Нет действительных корней\n");
+    }
+    else if (roots[0] == roots[1])
+    {
+        printf("1 корень %.2f\n", roots[0]);
     }
     else
     {
-        printf("ROOT1 %f\n", roots[0]);
-        printf("ROOT2 %f\n", roots[1]);
+        printf("1 корень %.2f\n", roots[0]);
+        printf("2 корень %.2f\n", roots[1]);
     }
     return 0;
 }
